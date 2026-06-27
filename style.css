@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* background: rgb(32, 4, 64); */
+    background-image: linear-gradient(to right, black, rgb(104, 15, 88));
+    color: white;
+    padding: 10px 0;
+    /*top and bottom padding*/
+}
+
+.logo {
+    font-size: 20px;
+    font-family: "Parisienne", cursive;
+    font-weight: bolder;
+}
+
+/* ul inside nav */
+nav ul {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+nav ul li {
+    /* remove the dots/bullets from the lists */
+    list-style-type: none;
+    font-size: 17px;
+}
+
+.hero {
+    background-image: linear-gradient(to right, lavender, rgb(215, 138, 205));
+    /* background-color: rgb(246, 222, 246); */
+    height: 85vh;
+    display: flex;
+
+    justify-content: center;
+    gap: 130px;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-left .one {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(85, 7, 85);
+}
+
+.hero-left .two {
+    font-size: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hero-right img {
+    border-radius: 14px;
+
+}
+
+.btn {
+    background-color: rgb(85, 7, 85);
+    color: rgb(255, 255, 255);
+    margin: 0px 2px;
+    padding: 4px 6px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.btn-container {
+    padding: 19px 0px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(108, 30, 94));
+    color: white;
+    font-family: "Outfit", sans-serif;
+    border-top: 2px solid rgb(88, 43, 73);
+    padding: 22px 100px;
+
+
+}
+
+.project-image img {
+    width: 49.5vw;
+    padding: 9px 12px;
+    border-radius: 45px;
+}
+
+.project_info {
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.project-info .text {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.project-info p {
+    padding: 12px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(225, 113, 178);
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 12px;
+
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .project {
+        padding: 1px;
+    }
+}
+
+@media screen and(max-width: 650) {
+    
+    .hero-left .one {
+        font-size: 40px;
+        text-align: center;
+
+    }
+    .hero-left .two {
+        font-size: 30px;
+        text-align: center;
+    }
+    .projects{
+        flex-direction: column;
+        
+    }
+    .project-image img{
+        width: 80vw;
+        margin: 15px 35px;
+    }
+    project-info{
+        padding: 15px 23px;
+    }
+
+}
